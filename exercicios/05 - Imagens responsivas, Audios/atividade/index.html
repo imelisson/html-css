@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade de Imagem Para diferente telas</title>
+</head>
+<body>
+<h1>Teste de Imagem com a Vi</h1>
+    <!-- Colocar o Efeito de mudança de tela na imagem -->
+
+    <picture>
+
+
+        
+        <source media="(max-width:400px )" srcset="imagens\GBUcGSgawAADQXA.jpg" type="image/jpg">
+        <source media="(max-width:600px )" srcset="imagens\VicelVert.jpg" type="image/jpg">
+        <source media="(max-width:800px )" srcset="imagens\vi600.jpg" type="image/jpg">
+        <source media="(max-width:1050px )" srcset="imagens/vi800.jpg " type="image/jpg">
+        <source media="(max-width:1250px )" srcset="imagens/vi1000.jpg " type="image/jpg">
+        <img src="imagens/vi1200.jpg" alt="">
+    </picture>
+    
+</body>
+</html>
