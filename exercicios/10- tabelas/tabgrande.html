@@ -6,22 +6,26 @@
     <title>Tabelas Grandes</title>
     <style>
 
-        @import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 
-        body {font-family: "Nova Mono", monospace; font-variant: small-caps; font-size: 20px;}
+        body {font-family: "SUSE", sans-serif;; font-variant: small-caps; font-size: 15px;}
         table { width: 600px; border-collapse: collapse;}
-        thead {background-color: rgb(88, 88, 88); color: white; }
-        tfoot {background-color: rgb(88, 88, 88); color: white;  }
+        thead {background-color: #1A1A20; color: white; }
+        tfoot {background-color: #15151A; color: white;  }
         td, th {border: 1px solid black; text-align: center; padding: 5px; }
-        td { background-color: rgb(184, 182, 182); }
-
-
+        td {color: white; }
+        td.tdnome { font-weight: bolder; color: white; text-align: left; }
+        caption { font-size: 1.5em; font-weight: bolder;}
+        .tdnum  { font-size: smaller; text-align: right;}
+        tbody > tr:nth-child(odd) { background-color:#2c2c3d;}
+        tbody > tr:nth-child(even) { background-color:#15151A;}
+        
 
     </style>
 </head>
 <body>
     <h1>Uso de Tabelas Grandes</h1>
-    <h2>Jogos mais jogados em 2024</h2>
+    
 
     <!-- ANATOMIA DE TABELAS GRANDES
         THEAD - TR-TD-TH
@@ -29,19 +33,78 @@
         TFOOT -TR-TD-TH           -->
 
         <TABLE>
+            <caption>Jogos mais jogados em 2024</caption>
             <thead>
-                <th>Nome</th>
-                <th>Premio</th>
-                <th>Telescpectadores</th>
+                <th scope="col">Nome</th>
+                <th scope="col" style="width: 100px;">Total de Premio</th>  <!-- o widht se ajusta com o th scope da coluna-->
+                <th scope="col">Telescpectadores</th>
             </THead>
                     <tbody>
-                        <td>League of Legends</td>
-                        <td>22</td>
-                        <td>225</td>
+                        <tr>
+                            <td class="tdnome">League of Legends</td>
+                            <td class="tdnum">$6 397 197</td>
+                            <td>2 829 728</td>
+                        </tr>
+
+                        <tr>
+                            <td class="tdnome">Mobile Legends: Bang Bang</td>
+                            <td class="tdnum">$6 222 570</td>
+                            <td>2 382 990
+                        </tr>                       </td>
+
+                        <tr>
+                            <td class="tdnome">Counter-Strike</td>
+                            <td class="tdnum">$14 319 202</td>
+                            <td>1 853 954</td>
+                        </tr>
+
+                        <tr>
+                            <td class="tdnome">Valorant</td>
+                            <td class="tdnum">$6 081 112</td>
+                            <td>1 687 848</td>
+                        </tr>
+
+                        <tr>
+                            <td class="tdnome">Dota 2</td>
+                            <td class="tdnum">$16 524 688</td>
+                            <td>1 523 957</td>
+                        </tr>
+
+                        <tr>
+                            <td class="tdnome">Fortnite</td>
+                            <td class="tdnum">$10 691 296</td>
+                            <td>809 854</td>
+                        </tr>
+
+                        <tr>
+                            <td class="tdnome">Arena of Valor</td>
+                            <td class="tdnum">$1 834 862</td>
+                            <td>713 507</td>
+                        </tr>
+
+                        <tr>
+                            <td class="tdnome">Apex Legends</td>
+                            <td class="tdnum">$5 615 625</td>
+                            <td>567 582</td>
+                        </tr>
+
+                        <tr>
+                            <td class="tdnome">PUBG Mobile</td>
+                            <td class="tdnum">$8 883 939</td>
+                            <td>566 118</td>
+                        </tr>
+
+                        <tr>
+                            <td class="tdnome">Tom Clancy’s Rainbow Six Siege</td>
+                            <td class="tdnum">$8 613 429</td>
+                            <td>521 374</td>
+                        </tr>
+
+                        
                     </Tbody>
             <tfoot>
                 <tr>
-                    <th>Total de Jogos</th>
+                    <th scope="row">Total de Jogos</th>
                     <td>Total de Telespectadores </td>
                     <td>Total de Prêmios</td>
 
