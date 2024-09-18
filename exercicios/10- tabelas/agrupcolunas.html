@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+        body {font-family: Arial, Helvetica, sans-serif; font-size: 15px;}
+        table { width: 600px; border-collapse: collapse;}
+        td, th {border: 1px solid black; text-align: center; padding: 5px; } 
+
+     
+ 
+        .cnome { background-color: aqua;}
+        .cpremio { background-color: darkcyan;}
+        .ctele { background-color: crimson;}
+
+    </style>
+</head>
+<body>
+
+    <!-- FOCO É NA TAG COLGROUP QUE SERVE PARA SELECIONAR E MEXER COM COLUNAS INTEIRAS-->
+
+
+
+        <TABLE>
+
+                                        <colgroup>
+                                            <col class=" cnome">
+                                         
+                                            <col class=" ctele" span="2">
+                                                                            
+                                        </colgroup>
+
+            <thead>
+                <th scope="col">Nome</th>
+                <th scope="col" style="width: 100px;">Total de Premio</th>  
+                <th scope="col">Telescpectadores</th>
+            </THead>
+                    <tbody>
+                        <tr>
+                            <td class="tdnome">League of Legends</td>
+                            <td class="tdnum">$6 397 197</td>
+                            <td>2 829 728</td>
+                        </tr>
+
+                        <tr>
+                            <td class="tdnome">Mobile Legends: Bang Bang</td>
+                            <td class="tdnum">$6 222 570</td>
+                            <td>2 382 990
+                        </tr>                       </td>
+
+                        <tr>
+                            <td class="tdnome">Counter-Strike</td>
+                            <td class="tdnum">$14 319 202</td>
+                            <td>1 853 954</td>
+                        </tr>
+
+                        <tr>
+                            <td class="tdnome">Valorant</td>
+                            <td class="tdnum">$6 081 112</td>
+                            <td>1 687 848</td>
+                        </tr>
+
+                        <tr>
+                            <td class="tdnome">Dota 2</td>
+                            <td class="tdnum">$16 524 688</td>
+                            <td>1 523 957</td>
+                        </tr>
+
+                        <tr>
+                            <td class="tdnome">Fortnite</td>
+                            <td class="tdnum">$10 691 296</td>
+                            <td>809 854</td>
+                        </tr>
+
+                        <tr>
+                            <td class="tdnome">Arena of Valor</td>
+                            <td class="tdnum">$1 834 862</td>
+                            <td>713 507</td>
+                        </tr>
+
+                        <tr>
+                            <td class="tdnome">Apex Legends</td>
+                            <td class="tdnum">$5 615 625</td>
+                            <td>567 582</td>
+                        </tr>
+
+                        <tr>
+                            <td class="tdnome">PUBG Mobile</td>
+                            <td class="tdnum">$8 883 939</td>
+                            <td>566 118</td>
+                        </tr>
+
+                        <tr>
+                            <td class="tdnome">Tom Clancy’s Rainbow Six Siege</td>
+                            <td class="tdnum">$8 613 429</td>
+                            <td>521 374</td>
+                        </tr>
+
+                        
+                    </Tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total de Jogos</th>
+                    <td>Total de Telespectadores </td>
+                    <td>Total de Prêmios</td>
+
+                </tr>
+            </tfoot>
+
+
+
+        </TABLE>
