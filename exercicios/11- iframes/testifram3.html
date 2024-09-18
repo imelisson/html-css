@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+    <style>
+        *{ font-family: Arial, Helvetica, sans-serif;}
+        iframe { width: 610px; height: 540px; border: 3px solid black; display: block; margin: auto;}
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Selecionando o Frame apartir de um Link
+        Precisa colocar uma tag " name" no iframe e logo em seguida colocar o "name" no target do link escolhido 
+
+        NÃO COLOCA NO SRC DO LINK MAS NO TARGET - O SRC VAI SER REALMENTE OQ DESEJA ABRIR NO IFRAME
+    
+    
+    -->
+
+    
+        <h1>Faça uma Escolha</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A eius accusamus quis nemo alias deleniti quo est ex culpa. Consequatur nesciunt sequi laboriosam eius quod pariatur. Numquam id doloremque accusamus.</p>
+
+            <ul>
+                <li><a target="itest" href="pagtest.html">Primeira Pagina</a></li>
+                <li><a target="itest" href="pagtest2.html">Segunda Pagina </a></li>
+                <li><a target="itest" href="pagtest3.html">Terceira Pagina</a></li>
+
+            </ul>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias animi nemo enim, hic, praesentium adipisci eius magnam sequi voluptate accusantium reprehenderit laudantium placeat vel esse debitis ipsam deleniti id repellendus?</p>
+
+                <!-- para colocar codigos em html no iframe apaga o src natual escreve um srcdoc e já pode digitar ou ate msm incluir um img-->
+            <iframe name="itest" srcdoc="<h1>Escolha um link acima </h1> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum asperiores molestiae architecto iusto reprehenderit tempore facilis suscipit doloribus, vel omnis similique. Numquam aut corrupti consequuntur ratione voluptas beatae quidem debitis.</p> <img src='imagens/bugdroid.png'>  "></iframe>
+
+
+
+</body>
+</html>
