@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Segiframe  FORMULÁRIO</title>
+</head>
+<body>
+
+      <!-- EM QUESTÕES DE QUANDO NECESSARIO COLOCAR UM IFRAME NO SEU SITE 
+       MAS VC NAO QUER QUE O SITE DO IFRAME CONSIGA ARMAZENAR DADOS 
+       VOCE PODE COLOCAR DEFESAS ESPECIFICAS DE SEGURANÇA CONTRA O IFRAME
+       
+       a tag sanbox receb o acesso a outtros sites como cadastro de pessoa
+       -->
+
+    <h1>Colocando Segurança no Iframe</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, iste, quia repudiandae, labore atque provident doloremque soluta dolor numquam natus cupiditate assumenda? Repellat officia impedit error sint aspernatur! Explicabo, velit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, voluptatum. Reiciendis sint porro eligendi impedit illo dignissimos modi, incidunt quos a nostrum ut, odit vero error ullam sed ea rerum?
+    </p>
+
+    <iframe src="paginasextras/segformulario.html" sandbox="sandbox" referrerpolicy="no-referrer"> 
+
+        Desculpe seu navegador nao tem recursos para carregar
+    </iframe>
+
+
+    <h1> A mesma coisa vale pra scripts</h1>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolor expedita eligendi, nemo odit id iusto perspiciatis numquam reiciendis quibusdam placeat autem non ut maiores libero beatae blanditiis facere quas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet repellat reiciendis non recusandae perferendis vitae blanditiis deleniti, quaerat sint, ut corrupti ea facere. Temporibus similique eum excepturi nihil facilis? Ipsam.</p>
+
+    <h2>Deixar um iframe Conduzir script é algo periogoso veja abaixo</h2>
+    <h3>Testando abaixo</h3>
+
+    <iframe src="paginasextras/testscript.html" sandbox="sandbox" referrerpolicy="no-referrer" ></iframe>
+
+</body>
+</html>
