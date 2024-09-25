@@ -1,0 +1,28 @@
+* { margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;}
+
+
+
+
+#bindex { background: #000; width: 100vw; height: 100vh;  background-image: url('imagens/fundo-madeira.jpg'); background-size: 100% 100%; background-repeat:no-repeat;  background-position: top center;}
+
+#cel { background-image: url('imagens/frame-iphone.png'); background-size: contain; background-repeat: no-repeat; height:627px ; width: 311px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+
+iframe {background-color: blue; height: 468px; width:  264px; position: absolute; top: 13.2%; left: 7.7%;}
+
+
+
+#divboto { position: absolute; left: 93%;margin-top: 20px;}
+
+.botoes {border-radius: 50%; padding-bottom: 30px; position: static;  }
+
+.botoes  img { border-radius: 50%; height: 55px; box-shadow: 5px 5px 5px black; box-sizing: border-box; }
+
+.botoes img:hover {border: 3px solid white ; transform: translate(-5%,-5%); transition: .2s ; transition: border .4s;}
+
+-- outrapag
+
+#pagex {width: 264; }
+
+.btpp { width: 600px; height: 60px; background-color: rgb(129, 8, 8); color: white; font-size: 2em; text-align: center; padding-top: 20px;margin-top: -3%; width: 245px;}
+
+.btpp:hover { background-color: rgb(255, 5, 5); transition: 1.5s; }
