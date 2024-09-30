@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Exe 5</title>
+</head>
+<body>
+
+    <h1>Exercicio 05</h1>
+
+    <form action="cadastro.php" method="get">
+
+            <fieldset>
+                <legend>Sexo</legend>
+
+                <!-- uma observação é que no input radio no caso sex caso não coloq o input com o mesmo nome sera marcado os dois e não podendo desmarcar depois ate que atualize a pag-->
+
+                <!-- para deixar marcado checked-->
+
+                <input type="radio" name="sxo" id="isxma" value="M"><label for="isxma">Masculino</label> <br>
+                <input type="radio" name="sxo" id="isxfe" checked value="F"><label for="isxfe">Femenino</label>
+
+
+
+            </fieldset>
+
+
+
+            <Fieldset>
+                <legend>Esportes Favoritos</legend>
+
+                <input type="checkbox" name="fut" id="ifut" checked><label for="ifut">Futebol</label> <br>
+                <input type="checkbox" name="bas" id="ibas"><label for="ibas">Basquete</label> <br>
+                <input type="checkbox" name="vol" id="ivol"><label for="ivol">Vôlei</label> <br>
+                <input type="checkbox" name="nat" id="inat"><label for="inat">Natação </label><br>
+             
+
+            </Fieldset>
+
+     <input type="reset" value="Limpar">   <input type="submit" value="Enviar">
+    </form>    
+</body>
+</html>

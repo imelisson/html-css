@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Exe 7</title>
+</head>
+<body>
+
+    <form action="cadastro.php">
+
+            <p> <label for="iestado">Estado:</label>
+                <Select name="estado" id="iestado">
+                    <option value="" selected>--Escolha--</option>
+                    <optgroup label="Sudoeste">
+                        <option value="SP" >São Paulo</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                    </optgroup>
+                    
+                    <optgroup label="Nordeste"><option value="RJ">Maranhão</option>
+                    <option value="RJ">Acre</option>
+                    <option value="RJ">Ceará</option></optgroup>
+                </Select>
+            </p>
+
+        <input type="reset" value="Limpar"><input type="submit" value="Enviar">
+
+
+    </form>
+    
+</body>
+</html>
