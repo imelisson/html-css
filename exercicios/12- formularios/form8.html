@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Exe 8</title>
+</head>
+<body>
+    <h1>Form eight</h1>
+
+    <!-- No output vai ter um exemplo de programação-->
+
+    <form action="cadastro.php">
+
+        <p><label for="inum">Numero:</label> <input type="number" name="num" id="inum" required oninput="isoma.innerHTML = Number (inum.value) + Number(tnum.value)"></p>
+        <p><label for="2num">Numero:</label> <input type="number" name="2num" id="tnum" required oninput="isoma.innerHTML = Number (inum.value) + Number(tnum.value)"></p>
+
+        <p><label for="isoma">Soma</label>
+        
+        <output name="soma" id="isoma">
+
+
+        </output>
+
+        </p>
+        
+        <input type="reset" value="Limpar"><input type="submit" value="Enviar">
+
+
+    </form>
+
+    
+</body>
+</html>
