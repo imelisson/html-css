@@ -1,1 +1,66 @@
 /* Todas as Demais Midias */
+
+
+
+
+/* Typical Device Breakpoint
+
+    Pequenas telas: até 600px 
+    Celular: de 600px  ate 768px
+    Tablet : de 769px ate 992px
+    Desktop: 992px até 1200px 
+    Grandes telas acima de 1200px
+
+
+*/
+
+@media print { /*Impressão */ 
+    *,h1 {  
+    font-family: 'Courier New', Courier, monospace; text-shadow: none; color: black;}
+    img#phone { display:none}
+    img#impress { display: block;}
+
+    body { background: url('imagens/back-print.jpg');}
+    main::after {content:(Essa imnpressão foi feita através do site Elisson); text-decoration: overline;}
+   
+    
+}
+
+/* no caso como ja fiz o mobile first primeiro nao é necessario esses dois abaixo media querry */
+@media screen and (max-width:600px) {
+    
+}
+
+
+@media screen and (min-width:600px) and (max-width: 768px) {  }
+
+
+@media screen and (min-width:768px) and (max-width: 992px) { /*Tablet*/
+    body { background-image: url(imagens/back-tablet.jpg)}
+        img#phone { display:none}
+        img#tablet {display: block;}
+        img#pc {display: none;}
+        img#tv {display: none;}
+        img#impress { display: none;}
+
+}
+
+@media screen and (min-width:992px) and (max-width: 1200px) {/*Desktop*/
+    body { background: url('imagens/back-pc.jpg');}
+    img#phone { display:none}
+    img#tablet {display: none;}
+    img#pc {display: block;}
+    img#tv {display: none;}
+    img#impress { display: none;}
+
+}
+
+@media screen and (min-width:1200px) {/*Grandes Telas*/
+    body { background: url('imagens/back-tv.jpg');}
+    img#phone { display:none}
+    img#tablet {display: none;}
+    img#pc {display: none;}
+    img#tv {display: block;}
+    img#impress { display: none;}
+
+}
